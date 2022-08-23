@@ -31,7 +31,7 @@ scripting. The specific list of projects contained follows:
 
 ## Author ✒️
 
-* **King CEO** <4mcking](https://github.com/4mcking)>
+* **King CEO** <[4mcking](https://github.com/4mcking)>
 
 ## Acknowledgements ©️
 
