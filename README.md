@@ -36,7 +36,7 @@ scripting. The specific list of projects contained follows:
 ## Acknowledgements ©️
 
 All work contained in this project was completed as part of the curriculum for
-ALX Africa. ALX Africa is an online-based full stack software
+ALX Africa. ALX Africa's SE Programme is an online-based full stack software
 engineering program that prepares students for careers in the tech industry
 using project-based peer learning. For more information, visit
 [this link](https://www.alxafrica.com/).
