@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-#include <stdio.h>
-#include <string.h>
-=======
->>>>>>> 18ec19c7ddc1180523d1ec76384b3db5b0d51620
 #include "Python.h"
 
 /**
