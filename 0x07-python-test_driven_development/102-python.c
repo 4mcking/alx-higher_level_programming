@@ -1,34 +1,33 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <string.h>
+=======
+>>>>>>> 18ec19c7ddc1180523d1ec76384b3db5b0d51620
 #include "Python.h"
 
 /**
- * print_python_string - Prints string information
- *
- * @p: Python Object
- * Return: no return
+ * print_python_string - Prints information about Python strings.
+ * @p: A PyObject string object.
  */
 void print_python_string(PyObject *p)
 {
+	long int length;
 
-	PyObject *str, *repr;
+	fflush(stdout);
 
-	(void)repr;
 	printf("[.] string object info\n");
-
-	if (strcmp(p->ob_type->tp_name, "str"))
+	if (strcmp(p->ob_type->tp_name, "str") != 0)
 	{
 		printf("  [ERROR] Invalid String Object\n");
 		return;
 	}
 
+	length = ((PyASCIIObject *)(p))->length;
+
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
 	else
 		printf("  type: compact unicode object\n");
-
-	repr = PyObject_Repr(p);
-	str = PyUnicode_AsEncodedString(p, "utf-8", "~E~");
-	printf("  length: %ld\n", PyUnicode_GET_SIZE(p));
-	printf("  value: %s\n", PyBytes_AsString(str));
+	printf("  length: %ld\n", length);
+	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &length));
 }
