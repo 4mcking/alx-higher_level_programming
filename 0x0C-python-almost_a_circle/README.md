@@ -1,1 +1,36 @@
-0x0C-python-almost_a_circle
+# Python - Almost a circle
+
+Project done during **Full Stack Software Engineering** studies at **ALX Africa**. 
+It aims to learn about unit testing, serialization, deserialization, 
+JSON, `args` and `kwargs` in **Python**.
+</br>
+In this project, I encapsulated skills in Python object-oriented programming
+by coding three connected classes to represent rectangles and squares. I wrote my
+own test suite using the `unittest` module to test all functionality for each
+class.
+
+## Technologies
+* Python Scripts are written with Python 3.4.3
+* Tested on Ubuntu 14.04 LTS
+
+## Files
+
+Inside `models` folder:
+
+| Filename | Description |
+| -------- | ----------- |
+| `__init__.py` | Script that converts the directory as a package |
+| `base.py` | Base class of geometrical instances |
+| `rectangle.py` | Class that inherits attributes references from `Base` class |
+| `square.py` | Class that inherits attributes references from `Square` class |
+
+Each class contains public/private attibutes, class and static methods. Also, these class raise exceptions when is required.
+
+Inside `tests/test_models` folder:
+
+| Filename | Description |
+| -------- | ----------- |
+| `__init__.py` | Script that converts the directory as a package |
+| `test_base.py` | Module that contains unittests to `Base` class |
+| `test_rectangle.py` | Module that contains unittests to `Rectangle` class |
+| `test_square.py` | Module that contains unittests to `Square` class |
